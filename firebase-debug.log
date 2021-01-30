@@ -1,0 +1,47 @@
+[debug] [2021-01-30T21:41:46.962Z] ----------------------------------------------------------------------
+[debug] [2021-01-30T21:41:46.968Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-30T21:41:46.969Z] CLI Version:   9.2.2
+[debug] [2021-01-30T21:41:46.969Z] Platform:      win32
+[debug] [2021-01-30T21:41:46.969Z] Node Version:  v14.15.1
+[debug] [2021-01-30T21:41:46.974Z] Time:          Sun Jan 31 2021 03:41:46 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-01-30T21:41:46.974Z] ----------------------------------------------------------------------
+[debug] [2021-01-30T21:41:46.975Z] 
+[debug] [2021-01-30T21:41:46.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-30T21:41:46.991Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Ecommerce Project\react-challenge-amazon-clone-master
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using challenge-4b2b2. 
+[debug] [2021-01-30T21:41:58.472Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-4b2b2 [none]
+[debug] [2021-01-30T21:41:59.177Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-4b2b2 403
+[debug] [2021-01-30T21:41:59.177Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-4b2b2 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-01-30T21:41:59.179Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-01-30T21:41:59.423Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:221:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:20)
+    at async Object.getFirebaseProject (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.doSetup [as project] (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project challenge-4b2b2. Please make sure the project exists and your account has permission to access it.
