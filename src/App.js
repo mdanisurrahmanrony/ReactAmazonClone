@@ -13,11 +13,11 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
 const promise = loadStripe(
-  "pk_test_51HPvU9DFg5koCdLGJJbNo60QAU99BejacsvnKvT8xnCu1wFLCuQP3WBArscK3RvSQmSIB3N0Pbsc7TtbQiJ1vaOi00X9sIbazL"
+  "pk_test_51IFQWqKSH9oO2jcL28XPLPIk9TDr9iWmRfvi3oUAy1XXv0sdPwPVTmG1o0ZiLfO0AnEudYzlom4soNy0PEVdSLST00C0HNbK6p"
 );
 
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [{ }, dispatch] = useStateValue();
 
   useEffect(() => {
     // will only run once when the app component loads...
